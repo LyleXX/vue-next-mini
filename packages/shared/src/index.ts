@@ -17,3 +17,11 @@ export const hasChanged = (value: any, oldValue: any): boolean => !Object.is(val
  * 是否为一个function
  */
 export const isFunction = (val: unknown): boolean => typeof val === 'function'
+/**
+ * Object.assign
+ */
+export const extend = Object.assign
+/**
+ * 只读的空对象
+ */
+export const EMPTY_OBJ: { readonly [key: string]: any } = {}
